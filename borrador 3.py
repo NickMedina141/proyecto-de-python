@@ -75,8 +75,8 @@ def docente(database,comprobante):
                     print("--Notas de estudiantes--")
                     print(f"\n{database[5][k]} Nota final: {s}")
                     
-                print(f"La nota mas alta fue del estudiante {database[5][k]} con su nota de {max(s)} ")
-                print(f"La nota mas baja fue del estudiante {database[5][k]} con su nota de {min(s)} ")
+                print(f"La nota mas alta fue del estudiante {database[5][k]} con su nota de {max(database[3].values())} ")
+                print(f"La nota mas baja fue del estudiante {database[5][k]} con su nota de {min(database[3].values())} ")
                 # hacer que muestre el nombre del estudiante y su nota, ademas
                 # si es posible hacer promedio cual es el mayor puntaje y el menor
             else:
