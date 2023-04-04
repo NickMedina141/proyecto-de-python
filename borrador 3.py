@@ -61,18 +61,18 @@ def docente(database,comprobante):
         opcion = int(input("\nEliga una opcion: "))
         if opcion == 1:
             creacionQuiz(database,comprobante)
-        elif opcion == 2: # hacer un contador para que si no hay ninguna pregunta no pueda ver las respuestas
+        elif opcion == 2: 
             cantidad2 = len(database[1])
             if cantidad2 > 0:
                 for i, j in database[1].items():
                     print(f"Pregunta {i}: Respuesta: {j}")
             else:
                 print("No hay respuestas en la base de datos del quiz")
-        elif opcion == 3: # hacer un contador para que si no hay ninguna pregunta no pueda ver las respuestas
+        elif opcion == 3: 
             cantidad3 = len(database[3])
             if cantidad3 > 0:
+                print("--Notas de estudiantes--")
                 for k, s in database[3].items():
-                    print("--Notas de estudiantes--")
                     print(f"\n{database[5][k]} Nota final: {s}")
                     
                 print(f"La nota mas alta fue del estudiante {database[5][k]} con su nota de {max(database[3].values())} ")
